@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Samuel Batista — Desenvolvedor de Software, estagiário no Itaú Unibanco e estudante de ADS na SPTech.">
+  <title>Samuel Batista — Desenvolvedor de Software</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💻%3C/text%3E%3C/svg%3E">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Samuel Batista — Desenvolvedor de Software">
+  <meta property="og:description" content="Estagiário no Itaú Unibanco | Java, C#, Python, AWS | Estudante de ADS na SPTech School">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Samuel Batista — Desenvolvedor de Software">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__spinner"></div>
+  </div>
+
+  <!-- Background Effects -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow bg-glow--blue"></div>
+  <div class="bg-glow bg-glow--purple"></div>
+  <div class="cursor-glow" id="cursor-glow"></div>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav" id="mobile-nav">
+    <button class="mobile-nav__close" aria-label="Fechar menu">&times;</button>
+    <a href="#sobre">Sobre</a>
+    <a href="#skills">Skills</a>
+    <a href="#experiencia">Experiência</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__logo">SamuelDev<span>.</span></div>
+    <ul class="navbar__links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experiencia">Experiência</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
+      <svg class="theme-toggle__icon theme-toggle__icon--sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      <svg class="theme-toggle__icon theme-toggle__icon--moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+    <button class="navbar__menu-btn" aria-label="Abrir menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero__content hero-animate">
+      <div class="hero__badge hero-animate__item"><span class="dot"></span> Disponível para oportunidades</div>
+      <p class="hero__greeting hero-animate__item">Olá, eu sou</p>
+      <h1 class="hero__name hero-animate__item">Samuel <span class="accent">Batista</span></h1>
+      <p class="hero__role hero-animate__item">Desenvolvedor de Software</p>
+      <p class="hero__description">
+        Construo automações que otimizam processos no <strong>Itaú Unibanco</strong> e projetos que resolvem problemas reais — de aplicações web com <strong>React</strong> a apps mobile com <strong>React Native</strong>. Stack principal: <strong>Java, C#, Python, React e AWS</strong>.
+      </p>
+      <div class="hero__actions hero-animate__item">
+        <a href="#contato" class="btn btn--primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Fale Comigo
+        </a>
+        <a href="Samuel Batista CV (1).docx" download class="btn btn--ghost">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Baixar CV
+        </a>
+        <a href="#projetos" class="btn btn--ghost">Ver Projetos</a>
+      </div>
+    </div>
+    <div class="hero__photo hero-animate__item">
+      <div class="hero__photo-glow"></div>
+      <div class="hero__photo-frame">
+        <img src="1773773077274.jpeg" alt="Samuel Batista — Desenvolvedor de Software">
+      </div>
+    </div>
+  </header>
+
+  <!-- Sobre -->
+  <section class="section" id="sobre">
+    <div class="reveal">
+      <span class="section__label">Sobre Mim</span>
+      <h2 class="section__title">Transformando ideias em código</h2>
+    </div>
+    <div class="about__grid">
+      <div class="about__text reveal">
+        <p>Comecei minha trajetória na <strong>ETEC Cidade Tiradentes</strong> com o técnico em Desenvolvimento de Sistemas e hoje curso o 5º semestre de <strong>ADS na SPTech School</strong>. Desde o meu primeiro projeto — um site temático de Valorant — descobri que programar é o que me move.</p>
+        <p>Atualmente sou estagiário no <strong>Itaú Unibanco</strong> (Investment Services), onde desenvolvo automações em <strong>C# e Python</strong>, atendo RITMs, faço code review ativo e aplico <strong>Clean Architecture, SOLID e Design Patterns</strong> no dia a dia — desde a implementação até o deploy em produção.</p>
+        <p>Fora do trabalho, construo projetos que resolvem problemas reais: criei o <strong>ClipGenius AI</strong> em 2 semanas para automatizar cortes de vídeos com Whisper e IA, desenvolvi o <strong>Desperdício Zero</strong> para combater o desperdício de alimentos com React Native e Gemini, e contribuí com o <strong>Inovare</strong>, um sistema para a ONG Instituição Mãos Amigas usando Spring Boot e AWS.</p>
+        <p>Busco uma posição onde eu possa aplicar minha experiência em <strong>Java, Python, C# e AWS</strong> na criação de sistemas escaláveis e de alta performance, evoluindo para me tornar um membro técnico chave da equipe.</p>
+      </div>
+      <div class="about__stats reveal">
+        <div class="stat-card">
+          <div class="stat-card__number" data-count="5" data-suffix="">0</div>
+          <div class="stat-card__label">Projetos com código no GitHub</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__number" data-count="10" data-suffix="+">0</div>
+          <div class="stat-card__label">Tecnologias dominadas</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__number" data-count="5" data-suffix="º">0</div>
+          <div class="stat-card__label">Semestre — ADS SPTech</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__number" data-count="1" data-suffix="+">0</div>
+          <div class="stat-card__label">Ano no Itaú Unibanco</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <div class="reveal">
+      <span class="section__label">Habilidades</span>
+      <h2 class="section__title">Tecnologias & Competências</h2>
+    </div>
+    <div class="skills__grid">
+      <!-- Back-end & Cloud -->
+      <div class="skill-card reveal">
+        <div class="skill-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3 class="skill-card__title">Back-end & Cloud</h3>
+        <p class="skill-card__desc">APIs REST com Java e Spring Boot, autenticação com Spring Security, mensageria com RabbitMQ e infraestrutura em AWS (EC2, S3, Lambda).</p>
+        <div class="skill-card__tags">
+          <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">RabbitMQ</span><span class="tag">AWS</span><span class="tag">EC2</span><span class="tag">S3</span>
+        </div>
+      </div>
+      <!-- C# -->
+      <div class="skill-card reveal">
+        <div class="skill-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        </div>
+        <h3 class="skill-card__title">C# & Automações</h3>
+        <p class="skill-card__desc">Automações com Clean Architecture, code review ativo, testes unitários com XUnit e aplicação de SOLID e Design Patterns (Factory, Strategy, Repository).</p>
+        <div class="skill-card__tags">
+          <span class="tag">C#</span><span class="tag">.NET</span><span class="tag">XUnit</span><span class="tag">Code Review</span><span class="tag">Clean Arch</span>
+        </div>
+      </div>
+      <!-- Python -->
+      <div class="skill-card reveal">
+        <div class="skill-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3 class="skill-card__title">Python & Automação</h3>
+        <p class="skill-card__desc">Scripts e automações para processos internos, atendimento de RITMs, pipelines com FastAPI, ETL com Pandas e integração com IA (Whisper, Gemini).</p>
+        <div class="skill-card__tags">
+          <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Pandas</span><span class="tag">Pytest</span><span class="tag">Automação</span>
+        </div>
+      </div>
+      <!-- Frontend & Mobile -->
+      <div class="skill-card reveal">
+        <div class="skill-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        </div>
+        <h3 class="skill-card__title">Frontend & Mobile</h3>
+        <p class="skill-card__desc">Interfaces modernas com React e React Native + Expo, com foco em componentização, consumo de APIs REST e experiência mobile com TypeScript.</p>
+        <div class="skill-card__tags">
+          <span class="tag">React</span><span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">TypeScript</span><span class="tag">HTML/CSS/JS</span>
+        </div>
+      </div>
+      <!-- Banco de Dados -->
+      <div class="skill-card reveal">
+        <div class="skill-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+        </div>
+        <h3 class="skill-card__title">Banco de Dados</h3>
+        <p class="skill-card__desc">Modelagem relacional, consultas otimizadas, migrations com SQLAlchemy e persistência em projetos full-stack com MySQL e PostgreSQL.</p>
+        <div class="skill-card__tags">
+          <span class="tag">SQL</span><span class="tag">MySQL</span><span class="tag">PostgreSQL</span>
+        </div>
+      </div>
+      <!-- DevOps & Padrões -->
+      <div class="skill-card reveal">
+        <div class="skill-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <h3 class="skill-card__title">Arquitetura & DevOps</h3>
+        <p class="skill-card__desc">Clean Architecture, Design Patterns (Factory, Strategy, Repository), versionamento com Git, containers Docker e ciclo de vida de deploys.</p>
+        <div class="skill-card__tags">
+          <span class="tag">Design Patterns</span><span class="tag">Clean Arch</span><span class="tag">Git</span><span class="tag">Docker</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Soft Skills -->
+    <div class="reveal" style="margin-top: 48px;">
+      <h3 class="section__title" style="font-size: 1.4rem; margin-bottom: 20px;">Habilidades Interpessoais</h3>
+    </div>
+    <div class="soft-skills reveal">
+      <span class="soft-skill-tag">Comunicação clara</span>
+      <span class="soft-skill-tag">Trabalho em equipe</span>
+      <span class="soft-skill-tag">Proatividade</span>
+      <span class="soft-skill-tag">Resolução de problemas</span>
+      <span class="soft-skill-tag">Adaptabilidade</span>
+      <span class="soft-skill-tag">Aprendizado rápido</span>
+      <span class="soft-skill-tag">Orientação a resultados</span>
+      <span class="soft-skill-tag">Senso de responsabilidade</span>
+    </div>
+  </section>
+
+  <!-- Experiência -->
+  <section class="section" id="experiencia">
+    <div class="reveal">
+      <span class="section__label">Trajetória</span>
+      <h2 class="section__title">Formação & Experiência</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline__item reveal">
+        <div class="timeline__date">Agosto 2024 — Presente</div>
+        <h3 class="timeline__title">Estagiário em Investment Services — Automações</h3>
+        <div class="timeline__company">Itaú Unibanco</div>
+        <ul class="timeline__bullets">
+          <li>Desenvolvimento de automações e aplicações em <strong>C# e Python</strong> para otimização de processos internos</li>
+          <li>Atendimento de <strong>RITMs</strong> para demandas da área de Investment Services</li>
+          <li>Code review ativo nos códigos Python e C#, mantendo qualidade com <strong>testes unitários (XUnit e Pytest)</strong></li>
+          <li>Aplicação de <strong>SOLID</strong> e padrões de projeto (<strong>Factory, Strategy, Repository</strong>) com arquitetura limpa</li>
+          <li>Atuação no <strong>ciclo de vida de mudanças</strong>, desde implementação até deploy em produção</li>
+        </ul>
+        <div class="timeline__tags">
+          <span class="tag">C#</span>
+          <span class="tag">Python</span>
+          <span class="tag">XUnit</span>
+          <span class="tag">Pytest</span>
+          <span class="tag">SOLID</span>
+          <span class="tag">Clean Architecture</span>
+
+        </div>
+      </div>
+      <div class="timeline__item reveal">
+        <div class="timeline__date">Fevereiro 2024 — Presente</div>
+        <h3 class="timeline__title">Tecnólogo em Análise e Desenvolvimento de Sistemas</h3>
+        <div class="timeline__company">São Paulo Tech School (SPTech) — 5º Semestre</div>
+        <ul class="timeline__bullets">
+          <li>Previsão de conclusão: <strong>Junho/2026</strong></li>
+          <li>Disciplinas: Algoritmos e Estruturas de Dados, Técnicas Avançadas de Programação Back-end, Computação e Sistemas Distribuídos, Engenharia de Software</li>
+          <li>Projetos acadêmicos: <strong>Valorant Hub</strong> (Node.js), <strong>IntelliSense</strong> (Java/AWS), <strong>Inovare</strong> (Spring Boot), <strong>Desperdício Zero</strong> (React Native/FastAPI)</li>
+        </ul>
+        <div class="timeline__tags">
+          <span class="tag">Java</span>
+          <span class="tag">Python</span>
+          <span class="tag">React Native</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">AWS</span>
+          <span class="tag">MySQL</span>
+        </div>
+      </div>
+      <div class="timeline__item reveal">
+        <div class="timeline__date">Janeiro 2020 — Dezembro 2022</div>
+        <h3 class="timeline__title">Técnico em Desenvolvimento de Sistemas</h3>
+        <div class="timeline__company">ETEC Cidade Tiradentes</div>
+        <ul class="timeline__bullets">
+          <li>Formação técnica com fundamentos em <strong>lógica de programação</strong>, algoritmos e estruturas de dados</li>
+          <li>Desenvolvimento web com <strong>HTML, CSS, JavaScript</strong> e banco de dados relacional</li>
+          <li>Primeiro contato com <strong>orientação a objetos</strong> e modelagem de sistemas</li>
+        </ul>
+        <div class="timeline__tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Lógica de Programação</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section class="section" id="projetos">
+    <div class="reveal">
+      <span class="section__label">Portfólio</span>
+      <h2 class="section__title">Projetos em destaque</h2>
+    </div>
+
+    <!-- Featured Project: Valorant -->
+    <div class="featured-project reveal">
+      <div class="featured-project__header">
+        <div class="featured-project__badge">Projeto Acadêmico Individual</div>
+        <h3 class="featured-project__title">Valorant Hub</h3>
+        <p class="featured-project__subtitle">Site temático full-stack com dashboard, ranking, quiz e mini jogo de treino de mira inspirado no universo de Valorant</p>
+      </div>
+      <div class="featured-project__content">
+        <div class="featured-project__desc">
+          <p>Projeto individual desenvolvido na SPTech com front-end em <strong>HTML, CSS e JavaScript</strong> e back-end em <strong>Node.js com Express</strong>. O site apresenta o universo de Valorant com páginas dedicadas para <strong>agentes e mapas</strong>, sistema completo de <strong>login e cadastro</strong>, e uma dashboard interativa com gráficos usando <strong>Chart.js</strong>.</p>
+          <p>Inclui funcionalidades como <strong>ranking de jogadores</strong>, um <strong>quiz de perguntas</strong> sobre o jogo e um <strong>mini jogo de treino de mira</strong>. O front utiliza <strong>Swiper, Font Awesome e Boxicons</strong> para carrosséis e ícones, com persistência de dados em <strong>MySQL</strong>.</p>
+        </div>
+        <div class="featured-project__features">
+          <h4 class="featured-project__features-title">Funcionalidades</h4>
+          <ul class="featured-project__list">
+            <li>Catálogo de agentes e mapas</li>
+            <li>Login e cadastro de usuários</li>
+            <li>Dashboard com gráficos interativos</li>
+            <li>Sistema de ranking</li>
+            <li>Quiz de perguntas sobre Valorant</li>
+            <li>Mini jogo de treino de mira</li>
+            <li>Carrosséis e navegação responsiva</li>
+            <li>API REST com Express</li>
+          </ul>
+        </div>
+      </div>
+      <div class="featured-project__tech-stack">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">Express</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">Chart.js</span>
+        <span class="tag">Swiper</span>
+      </div>
+      <div class="featured-project__actions">
+        <a href="https://github.com/Lzsaam/ProjetoIndividual" target="_blank" rel="noopener" class="btn btn--primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          Ver no GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- Featured Project: Desperdício Zero -->
+    <div class="featured-project reveal">
+      <div class="featured-project__header">
+        <div class="featured-project__badge">Projeto Principal</div>
+        <h3 class="featured-project__title">Desperdício Zero</h3>
+        <p class="featured-project__subtitle">Solução full-stack mobile + backend para controle de alimentos e redução de desperdício doméstico</p>
+      </div>
+      <div class="featured-project__content">
+        <div class="featured-project__desc">
+          <p>Aplicação que permite cadastrar itens manualmente ou por <strong>leitura de código de barras</strong>, classifica automaticamente a urgência de consumo com base na data de validade, gera validade estimada quando o item não possui essa informação e mantém histórico de consumo, descarte e doação.</p>
+          <p>Implementei funcionalidades avançadas como <strong>notificações push automáticas</strong>, geração de <strong>receitas com IA usando Google Gemini</strong>, filtros e ordenação por prioridade, busca em tempo real, gestos de swipe e um painel de <strong>estatísticas com gráficos</strong> para análise do desperdício. Também estruturei um fluxo de <strong>ETL</strong> com Pandas para tratar dados do Open Food Facts.</p>
+        </div>
+        <div class="featured-project__features">
+          <h4 class="featured-project__features-title">Funcionalidades</h4>
+          <ul class="featured-project__list">
+            <li>Scanner de código de barras</li>
+            <li>Receitas inteligentes com IA (Gemini)</li>
+            <li>Notificações push automáticas</li>
+            <li>Dashboard de estatísticas e impacto</li>
+            <li>Alertas de validade por urgência</li>
+            <li>Histórico de consumo e doação</li>
+            <li>ETL com Pandas + Open Food Facts</li>
+            <li>Tema claro/escuro</li>
+          </ul>
+        </div>
+      </div>
+      <div class="featured-project__tech-stack">
+        <span class="tag">React Native</span>
+        <span class="tag">Expo</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">FastAPI</span>
+        <span class="tag">Python</span>
+        <span class="tag">SQLAlchemy</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">Google Gemini</span>
+        <span class="tag">Pandas</span>
+        <span class="tag">APScheduler</span>
+      </div>
+      <div class="featured-project__actions">
+        <a href="https://github.com/Desperdicio-Zero" target="_blank" rel="noopener" class="btn btn--primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          Ver no GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- Featured Project: Inovare (ONG IMA) -->
+    <div class="featured-project reveal">
+      <div class="featured-project__header">
+        <div class="featured-project__badge">Projeto Social</div>
+        <h3 class="featured-project__title">Inovare — ONG IMA</h3>
+        <p class="featured-project__subtitle">Sistema de agendamento e gestão de voluntários para a Instituição Mãos Amigas</p>
+      </div>
+      <div class="featured-project__content">
+        <div class="featured-project__desc">
+          <p>Sistema completo para ONG que permite o <strong>cadastro de voluntários pelo administrador</strong>, disponibilização de horários de atendimento e <strong>cadastro de beneficiários com questionário social</strong> para classificação automática entre Benefício de Valor Social ou Programa Multidisciplinar.</p>
+          <p>Arquitetura monolítica com <strong>Spring Boot + Spring Security</strong> no backend, <strong>React</strong> no frontend e <strong>RabbitMQ</strong> para mensageria assíncrona de emails. Infraestrutura em <strong>AWS com EC2, VPC, NAT Gateway e NGINX</strong> como proxy reverso. Integração com <strong>Google Calendar</strong> para sincronização de agendas e API de videochamadas.</p>
+        </div>
+        <div class="featured-project__features">
+          <h4 class="featured-project__features-title">Funcionalidades</h4>
+          <ul class="featured-project__list">
+            <li>Cadastro e login com controle de permissões</li>
+            <li>Questionário social com classificação automática</li>
+            <li>Agendamento de horários com voluntários</li>
+            <li>Anamnese pela assistente social</li>
+            <li>Mensageria com RabbitMQ (emails)</li>
+            <li>Integração com Google Calendar</li>
+            <li>Site institucional para a ONG</li>
+            <li>Deploy em AWS (EC2, VPC, NGINX)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="featured-project__tech-stack">
+        <span class="tag">Java</span>
+        <span class="tag">Spring Boot</span>
+        <span class="tag">Spring Security</span>
+        <span class="tag">React</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">RabbitMQ</span>
+        <span class="tag">AWS EC2</span>
+        <span class="tag">VPC</span>
+        <span class="tag">NGINX</span>
+        <span class="tag">Google Calendar API</span>
+      </div>
+      <div class="featured-project__actions">
+        <a href="https://github.com/Inovare-Grupo-8" target="_blank" rel="noopener" class="btn btn--primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          Ver no GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- Featured Project: IntelliSense -->
+    <div class="featured-project reveal">
+      <div class="featured-project__header">
+        <div class="featured-project__badge">Data & Segurança</div>
+        <h3 class="featured-project__title">IntelliSense</h3>
+        <p class="featured-project__subtitle">Plataforma de dados para combate à criminalidade e apoio à segurança pública em São Paulo</p>
+      </div>
+      <div class="featured-project__content">
+        <div class="featured-project__desc">
+          <p>Sistema criado para auxiliar no <strong>combate à criminalidade</strong> em regiões do estado de São Paulo. A plataforma apoia o secretário de segurança na <strong>otimização de operações e gerenciamento de frotas</strong>, com dashboard que identifica áreas de risco para cidadãos.</p>
+          <p>O back-end em <strong>Java</strong> consome e trata dados do <strong>AWS S3</strong>, armazena em MySQL e envia <strong>notificações automatizadas via Slack e e-mail</strong> com relatórios. O front-end inclui site institucional, autenticação e <strong>dashboard de monitoramento</strong> com gráficos e visualização de dados. Infra em <strong>Docker + AWS (EC2, S3, AMI, IAM)</strong>.</p>
+        </div>
+        <div class="featured-project__features">
+          <h4 class="featured-project__features-title">Funcionalidades</h4>
+          <ul class="featured-project__list">
+            <li>ETL: consumo e tratamento de dados do S3</li>
+            <li>Dashboard com gráficos de áreas de risco</li>
+            <li>Notificações via Slack e e-mail</li>
+            <li>Leitura de planilhas Excel (Apache POI)</li>
+            <li>Site institucional + login/cadastro</li>
+            <li>Containers Docker para escalabilidade</li>
+            <li>Integração com AWS S3, EC2, IAM</li>
+            <li>Logs com Log4j e monitoramento</li>
+          </ul>
+        </div>
+      </div>
+      <div class="featured-project__tech-stack">
+        <span class="tag">Java</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">Docker</span>
+        <span class="tag">AWS S3</span>
+        <span class="tag">AWS EC2</span>
+        <span class="tag">Slack API</span>
+        <span class="tag">Apache POI</span>
+        <span class="tag">Maven</span>
+        <span class="tag">HTML/CSS/JS</span>
+      </div>
+      <div class="featured-project__actions">
+        <a href="https://github.com/IntelliSense-SPTech" target="_blank" rel="noopener" class="btn btn--primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          Ver no GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- Featured Project: ClipGenius AI -->
+    <div class="featured-project reveal">
+      <div class="featured-project__header">
+        <div class="featured-project__badge">Projeto Pessoal · IA</div>
+        <h3 class="featured-project__title">ClipGenius AI</h3>
+        <p class="featured-project__subtitle">Plataforma modular para automação do pipeline de corte e reaproveitamento de vídeos longos em clipes verticais prontos para distribuição</p>
+      </div>
+      <div class="featured-project__content">
+        <div class="featured-project__desc">
+          <p>Converte qualquer vídeo (YouTube, Shorts, Reels públicos) em <strong>clipes verticais legendados</strong> prontos para publicar. Construído em 2 semanas como produto próprio, eliminando dependência de ferramentas pagas para criação de conteúdo para TikTok.</p>
+          <p>Arquitetura em camadas com <strong>domínio, aplicação e infraestrutura</strong> bem separados. Pipeline orquestrado com download resiliente via <strong>yt-dlp com cache</strong>, transcrição <strong>Whisper</strong>, análise multimodal (<strong>OpenCV</strong> + áudio + keywords + embeddings semânticos), scoring configurável e <strong>renderização em lote com ffmpeg</strong> em 9:16. Interface <strong>Streamlit "ClipGenius Studio"</strong> com presets, progresso em tempo real, feedback colaborativo e exportação de pacotes promocionais com CTA por plataforma.</p>
+          <p>Cobertura com <strong>48 testes automatizados</strong> cobrindo pipeline, promoção, scoring, scripts e legendas. Motor de analytics com tracking de eventos, histórico de runs e ajuste automático de pesos.</p>
+        </div>
+        <div class="featured-project__features">
+          <h4 class="featured-project__features-title">Funcionalidades</h4>
+          <ul class="featured-project__list">
+            <li>Download resiliente + cache inteligente</li>
+            <li>Transcrição Whisper (GPU opcional)</li>
+            <li>Scoring multimodal + embeddings semânticos</li>
+            <li>Render em lote 9:16 com legendas</li>
+            <li>ClipGenius Studio (Streamlit) com presets</li>
+            <li>Pacotes promocionais .zip + CTA</li>
+            <li>48 testes · Clean Architecture · SOLID</li>
+            <li>CLI completa com flags avançados</li>
+          </ul>
+        </div>
+      </div>
+      <div class="featured-project__tech-stack">
+        <span class="tag">Python 3.13</span>
+        <span class="tag">Whisper</span>
+        <span class="tag">OpenCV</span>
+        <span class="tag">ffmpeg</span>
+        <span class="tag">Streamlit</span>
+        <span class="tag">yt-dlp</span>
+        <span class="tag">PyTorch</span>
+        <span class="tag">Pandas</span>
+        <span class="tag">NLTK</span>
+        <span class="tag">sentence-transformers</span>
+      </div>
+      <div class="featured-project__actions">
+        <a href="https://github.com/Lzsaam/ClipsGenius" target="_blank" rel="noopener" class="btn btn--primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          Ver no GitHub
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Contato -->
+  <section class="section" id="contato">
+    <div class="reveal" style="text-align: center;">
+      <span class="section__label" style="justify-content: center;">Contato</span>
+      <h2 class="section__title">Vamos conversar?</h2>
+      <p style="color: var(--color-text-secondary); max-width: 500px; margin: -32px auto 48px; font-size: 1rem; line-height: 1.7;">Estou aberto a novas oportunidades, projetos freelance e colaborações. Sinta-se à vontade para entrar em contato!</p>
+    </div>
+    <div class="contact__cards reveal">
+      <a class="contact-card" href="mailto:samuel.lima@sptech.school">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <span class="contact-card__label">E-mail</span>
+        <span class="contact-card__value">samuel.lima@sptech.school</span>
+      </a>
+      <a class="contact-card" href="https://www.linkedin.com/in/samuel-batista-lima-73294a320/" target="_blank" rel="noopener">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        <span class="contact-card__label">LinkedIn</span>
+        <span class="contact-card__value">Samuel Batista Lima</span>
+      </a>
+      <a class="contact-card" href="https://github.com/Lzsaam" target="_blank" rel="noopener">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        <span class="contact-card__label">GitHub</span>
+        <span class="contact-card__value">@Lzsaam</span>
+      </a>
+      <a class="contact-card" href="https://wa.me/5511932066316" target="_blank" rel="noopener">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="contact-card__label">WhatsApp</span>
+        <span class="contact-card__value">(11) 93206-6316</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__links">
+      <a href="https://github.com/Lzsaam" target="_blank" rel="noopener">GitHub</a>
+      <span class="footer__dot">·</span>
+      <a href="https://www.linkedin.com/in/samuel-batista-lima-73294a320/" target="_blank" rel="noopener">LinkedIn</a>
+      <span class="footer__dot">·</span>
+      <a href="mailto:samuel.lima@sptech.school">E-mail</a>
+    </div>
+    <p>&copy; 2026 Samuel Batista.</p>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
