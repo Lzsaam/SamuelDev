@@ -975,7 +975,7 @@ img {
 /* --- Contact Section --- */
 .contact__cards {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 }
 
@@ -1021,7 +1021,7 @@ img {
 
 @media (max-width: 768px) {
   .contact__cards {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
