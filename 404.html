@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Página não encontrada | SamuelDev</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a0f1c'/%3E%3Crect x='1' y='1' width='30' height='30' rx='7' fill='none' stroke='%233b82f6' stroke-width='1.5'/%3E%3Ctext x='16' y='22' font-family='system-ui,-apple-system,sans-serif' font-size='16' font-weight='700' fill='white' text-anchor='middle'%3ESD%3C/text%3E%3C/svg%3E">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: #0a0f1c;
+      color: #e2e8f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Grid background */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+      z-index: 0;
+    }
+
+    /* Glow */
+    .glow {
+      position: fixed;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      filter: blur(120px);
+      opacity: 0.15;
+      z-index: 0;
+    }
+
+    .glow--blue {
+      background: #3b82f6;
+      top: 20%;
+      left: 30%;
+    }
+
+    .glow--purple {
+      background: #818cf8;
+      bottom: 20%;
+      right: 30%;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      max-width: 500px;
+    }
+
+    .error-code {
+      font-size: clamp(6rem, 15vw, 10rem);
+      font-weight: 700;
+      line-height: 1;
+      background: linear-gradient(135deg, #3b82f6 0%, #818cf8 50%, #3b82f6 100%);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: shimmer 3s ease-in-out infinite;
+      margin-bottom: 16px;
+    }
+
+    @keyframes shimmer {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #f1f5f9;
+    }
+
+    p {
+      color: #94a3b8;
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 28px;
+      background: #3b82f6;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border: 1px solid transparent;
+    }
+
+    .btn:hover {
+      background: #2563eb;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(59, 130, 246, 0.3);
+    }
+
+    .btn svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .terminal {
+      margin-top: 48px;
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid rgba(59, 130, 246, 0.1);
+      border-radius: 12px;
+      padding: 20px 24px;
+      text-align: left;
+      font-family: 'Courier New', monospace;
+      font-size: 0.8rem;
+      backdrop-filter: blur(12px);
+    }
+
+    .terminal__header {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 16px;
+    }
+
+    .terminal__dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .terminal__dot--red { background: #ef4444; }
+    .terminal__dot--yellow { background: #eab308; }
+    .terminal__dot--green { background: #22c55e; }
+
+    .terminal__line {
+      color: #64748b;
+      margin-bottom: 4px;
+    }
+
+    .terminal__line span {
+      color: #3b82f6;
+    }
+
+    .terminal__line .cmd {
+      color: #e2e8f0;
+    }
+
+    .terminal__line .err {
+      color: #f87171;
+    }
+
+    .terminal__line .ok {
+      color: #22c55e;
+    }
+  </style>
+</head>
+<body>
+  <div class="glow glow--blue"></div>
+  <div class="glow glow--purple"></div>
+
+  <div class="content">
+    <div class="error-code">404</div>
+    <h1>Essa rota não existe</h1>
+    <p>Parece que você tentou acessar uma página que não foi encontrada. Mas calma, o resto do portfólio está funcionando.</p>
+
+    <a href="/SamuelDev/" class="btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      Voltar ao início
+    </a>
+
+    <div class="terminal">
+      <div class="terminal__header">
+        <div class="terminal__dot terminal__dot--red"></div>
+        <div class="terminal__dot terminal__dot--yellow"></div>
+        <div class="terminal__dot terminal__dot--green"></div>
+      </div>
+      <div class="terminal__line"><span>$</span> <span class="cmd">curl https://lzsaam.github.io/SamuelDev/???</span></div>
+      <div class="terminal__line"><span class="err">Error 404: Page not found</span></div>
+      <div class="terminal__line"><span>$</span> <span class="cmd">cd /home</span></div>
+      <div class="terminal__line"><span class="ok">Redirecting to SamuelDev...</span></div>
+    </div>
+  </div>
+</body>
+</html>
